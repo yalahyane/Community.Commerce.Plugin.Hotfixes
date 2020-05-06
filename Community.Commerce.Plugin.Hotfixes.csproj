@@ -13,8 +13,8 @@
   <PropertyGroup>
     <Description>Sitecore Commerce Sample Plugin Template</Description>
     <Authors>Sitecore</Authors>
-    <TargetFramework Condition="'$(SitecoreCommerceVersion)' == '9.0.2'">net462</TargetFramework>
-    <TargetFramework Condition="'$(SitecoreCommerceVersion)' == '9.3'">net471</TargetFramework>
+    <TargetFramework Condition="'$(SitecoreCommerceVersion)' == '9.0' OR '$(SitecoreCommerceVersion)' == '9.0.1' OR '$(SitecoreCommerceVersion)' == '9.0.2' OR '$(SitecoreCommerceVersion)' == '9.0.3'">net462</TargetFramework>
+    <TargetFramework Condition="'$(SitecoreCommerceVersion)' == '9.1' OR '$(SitecoreCommerceVersion)' == '9.2' OR '$(SitecoreCommerceVersion)' == '9.3'">net471</TargetFramework>
     <PackageTags>$(PackageTags);Commerce;Sample;Plugin</PackageTags>
     <PackageIconUrl>http://www.sitecore.net/favicon.ico</PackageIconUrl>
     <PackageProjectUrl>http://www.sitecore.net/</PackageProjectUrl>
@@ -23,10 +23,40 @@
     <AssemblyName>Community.Commerce.Plugin.Hotfixes</AssemblyName>
   </PropertyGroup>
 
+  <ItemGroup Condition="'$(SitecoreCommerceVersion)' == '9.0'">
+    <PackageReference Include="Sitecore.Commerce.Plugin.Catalog" Version="2.0.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Availability" Version="2.0.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Customers" Version="2.0.*" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(SitecoreCommerceVersion)' == '9.0.1'">
+    <PackageReference Include="Sitecore.Commerce.Plugin.Catalog" Version="2.1.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Availability" Version="2.1.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Customers" Version="2.1.*" />
+  </ItemGroup>
+
   <ItemGroup Condition="'$(SitecoreCommerceVersion)' == '9.0.2'">
     <PackageReference Include="Sitecore.Commerce.Plugin.Catalog" Version="2.2.*" />
     <PackageReference Include="Sitecore.Commerce.Plugin.Availability" Version="2.2.*" />
     <PackageReference Include="Sitecore.Commerce.Plugin.Customers" Version="2.2.*" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(SitecoreCommerceVersion)' == '9.0.3'">
+    <PackageReference Include="Sitecore.Commerce.Plugin.Catalog" Version="2.4.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Availability" Version="2.4.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Customers" Version="2.4.*" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(SitecoreCommerceVersion)' == '9.1'">
+    <PackageReference Include="Sitecore.Commerce.Plugin.Catalog" Version="3.0*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Availability" Version="3.0.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Customers" Version="3.0.*" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(SitecoreCommerceVersion)' == '9.2'">
+    <PackageReference Include="Sitecore.Commerce.Plugin.Catalog" Version="4.0*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Availability" Version="4.0.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Customers" Version="4.0.*" />
   </ItemGroup>
 
   <ItemGroup Condition="'$(SitecoreCommerceVersion)' == '9.3'">
