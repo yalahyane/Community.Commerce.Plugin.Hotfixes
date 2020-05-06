@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <AssemblyAttribute Include="XCentium.Commerce.Plugin.Hotfixes.SitecoreCommerceVersionAttribute">
+    <AssemblyAttribute Include="Community.Commerce.Plugin.Hotfixes.SitecoreCommerceVersionAttribute">
       <_Parameter1>"$(Version)"</_Parameter1>
     </AssemblyAttribute>
   </ItemGroup>
@@ -20,7 +20,7 @@
     <PackageProjectUrl>http://www.sitecore.net/</PackageProjectUrl>
     <PackageLicenseUrl>http://www.sitecore.net/platform/pricing.aspx</PackageLicenseUrl>
     <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
-    <AssemblyName>XCentium.Commerce.Plugin.Hotfixes</AssemblyName>
+    <AssemblyName>Community.Commerce.Plugin.Hotfixes</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup Condition="'$(SitecoreCommerceVersion)' == '9.0.2'">

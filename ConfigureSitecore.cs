@@ -1,4 +1,4 @@
-﻿namespace XCentium.Commerce.Plugin.Hotfixes
+﻿namespace Community.Commerce.Plugin.Hotfixes
 {
     using Microsoft.Extensions.DependencyInjection;
     using Pipelines.Blocks;

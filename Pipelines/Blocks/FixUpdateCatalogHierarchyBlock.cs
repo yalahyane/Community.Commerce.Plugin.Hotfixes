@@ -1,4 +1,4 @@
-﻿namespace XCentium.Commerce.Plugin.Hotfixes.Pipelines.Blocks
+﻿namespace Community.Commerce.Plugin.Hotfixes.Pipelines.Blocks
 {
     using System;
     using System.Collections.Generic;

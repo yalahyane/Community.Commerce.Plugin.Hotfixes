@@ -1,4 +1,4 @@
-﻿namespace XCentium.Commerce.Plugin.Hotfixes.Policies
+﻿namespace Community.Commerce.Plugin.Hotfixes.Policies
 {
     using Sitecore.Commerce.Core;
 
