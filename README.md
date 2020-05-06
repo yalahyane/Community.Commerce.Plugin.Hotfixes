@@ -1,4 +1,4 @@
-# XCentium.Commerce.Plugin.Hotfixes
+# Community.Commerce.Plugin.Hotfixes
 
 This plugin is meant for the Sitecore Commerce Community.  
 The goal is to collect as many hotfixes as possible that the community encountered during their implementations.  
