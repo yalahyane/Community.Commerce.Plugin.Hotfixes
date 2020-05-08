@@ -57,7 +57,7 @@ The plugin is built to work with all >=9 versions by:
 ```
 
 
-Here's how you can contribute:
+Here's how you can contribute (Please create a new Branch and send Pull Requests):
 ##### 1) Add your fix (Pipeline/Block).
 
 ##### 2) Determine the target version(s) for your fix. 
